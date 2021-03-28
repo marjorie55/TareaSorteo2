@@ -57,7 +57,7 @@ public class ClsListaSorteo {
                 for (i = 0; i<10;i++){//y agarra 10 al azar
                     Collections.shuffle(listanombre);//desordena los nombres
                     System.out.println("Ganador No."+(i+1+" es "+listanombre.get(0)));
-                    listanombre.remove(0);
+                    listanombre.remove(0);//elimina los nombres
                 }
                 //listanombre.remove(0);
                 //Collections.sort(listanombre);
@@ -65,12 +65,12 @@ public class ClsListaSorteo {
                
             }           
             if ("2".equals(anws)){
-                Collections.sort(listanombre);
+                Collections.sort(listanombre);//ordena los nombres
                 //listanombre.remove(i);
                 //System.out.println("\nPersonas a participar"+listanombre+"\n ");          
                 System.out.println("\nPersonas a participar");  
                 for (String p : listanombre){//saca los nombres de las personas
-                    cont--;
+                    cont++;
                     System.out.print("\n("+cont+")"+" "+p);
                 }              
             }
